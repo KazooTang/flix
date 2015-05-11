@@ -10,11 +10,11 @@
             <th>Description</th>
         </tr>
         <tr>
-            <td><%= movie.title %></td>
-            <td><%= movie.rating %></td>
-            <td><%= movie.released_on %></td>
-            <td><%= number_to_currency(movie.total_gross) %></td>
-            <td><%= truncate(movie.description, length: 40, seperator: ' ') %></td>
+            <td data-th="Title"><%= movie.title %></td>
+            <td data-th="Rating"><%= movie.rating %></td>
+            <td data-th="Released"><%= movie.released_on %></td>
+            <td data-th="Total gross"><%= number_to_currency(movie.total_gross) %></td>
+            <td data-th="Description"><%= truncate(movie.description, length: 40, seperator: ' ') %></td>
         </tr>
     </table>
 <% end %>
