@@ -1,4 +1,4 @@
-require 'spec_helper'
+#require 'spec_helper'
 
 describe "Vewing the list of movies" do
   it "shows the movies" do
